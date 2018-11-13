@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ccc;
+}
+
+/* Style the header */
+header {
+    color: darkred;
+    text-align: center;
+    display: flex;
+}
+
+header h2, header h4 {
+    margin: 5px;
+}
+
+#headerLeft {
+    width: 30%;
+    float: left;
+}
+
+#headerCenter {
+    width: 40%;
+}
+
+#headerRight {
+    width: 30%;
+    float: right;
+}
+
+
+
+
+#scoreTable {
+    display: flex;
+    background-color: darkred;
+    text-align: center;
+    color: white;
+    height: 56px;
+}
+#scoreTable h2,  h4 {
+    margin: 0;
+}
+
+button {
+    height: 56px;
+    width: 125px; 
+    cursor: pointer;
+}
+
+button:hover {
+
+}
+
+#st1 {width: 30%;}
+#st2 {width: 40%;}
+#st3{width: 30%;}
+
+/* Create two columns/boxes that floats next to each other */
+
+#main{display: flex;}
+#leftNav {
+    float: left;
+    width: 30%;
+    background: #ccc;
+    padding: 30px;
+}
+
+#board {
+    width: 40%;
+}
+
+#rightNav {
+    float: left;
+    width: 30%;
+    background: #ccc;
+    padding: 30px;
+}
+
+#leftNav > h2, #rightNav > h2 {
+    padding-bottom: 10px;
+    text-align: center;
+    color: darkred;
+}
+
+/* Style the list inside the menu */
+table {
+    margin: auto
+}
+
+td{
+    width: 85px;
+    text-align: center
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    #main { flex-direction: column}
+    #board, #rightNav {   
+        width: 100%;
+        height: auto;
+        margin: auto;
+        padding: 10px;
+    }
+    #leftNav {
+        display: none;
+    }
+
+    #headerLeft {
+        display: none;
+    }
+    
+    #headerCenter {
+        width: 60%;
+    }
+    
+    #headerRight {
+        width: 40%;
+    }
+
+}
+
+#icon_twitter, #icon_github {
+    border-radius: 50%;
+}

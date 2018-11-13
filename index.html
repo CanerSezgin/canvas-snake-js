@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Snake</title>
+</head>
+<body>
+
+<header>
+    <div id="headerLeft">
+        <p>2018 | Made With ❤ by Caner SEZGIN</p>
+    </div>
+    <div id="headerCenter">
+            <h2>JS Canvas Snake Game</h2>
+            <h4>Back To The 80s</h4>
+    </div>
+    <div id="headerRight">
+        <a href="http://bit.ly/CanerSezgin" target="_blank"><img src="images/twitter.jpg" alt="Follow Me on Twitter" id = "icon_twitter"></a>
+        <a href="https://github.com/CanerSezgin" target="_blank"><img src="images/github.png" alt="Follow Me on GitHub" id = "icon_github"></a> 
+    </div>
+
+</header>
+
+    <div id="scoreTable">
+        <div id="st1">
+            <button type="button" class="btn btn-primary btn-xs btn-block" onclick="start()" id="start">Start</button>
+            <button type="button" class="btn btn-primary btn-xs btn-block" onclick="resetScores()">Reset Scores</button>
+        </div>
+        <div id="st2">
+            <h2>Score</h2>
+            <h2 id="score"></h2>
+        </div>
+        <div id="st3">
+            <h2>Level</h2>
+            <h2 id="level"></h2>
+        </div>
+    </div>
+
+    <div id="main">
+  <nav id="leftNav">
+        <h2>Your Last Scores</h2>
+        <table id="lastScores"></table>
+  </nav>
+
+        <canvas id="board" width="450" height="450"></canvas>
+
+        <nav id="rightNav">
+                <h2>Highest Scores</h2>
+              <table id="highestScores"></table>
+            </nav>
+        </div>
+        
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="snake.js"></script>
+</body>
+</html>
